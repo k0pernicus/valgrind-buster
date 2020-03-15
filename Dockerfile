@@ -4,7 +4,7 @@ FROM debian:buster
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install gcc g++ valgrind -y && \
+    apt-get install make cmake gcc g++ valgrind -y && \
     rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /app/src
